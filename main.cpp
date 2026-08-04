@@ -141,11 +141,17 @@ void ex7TipuriDeDate() {
     int suma=x+y;
     int uc=suma%10;
     cout<<"UC("<<x<<"+"<<y<<")=12"<<uc<<endl;
+    
 }
-int main() {
-   ex7TipuriDeDate();
+void tema1() {
+    int c=0, cc=0;
+    cout<<"Introduceti numarul de cutii"<<endl;
+    cin>>c;
+    cout<<"Introduceti numarul de creioane pe cutie"<<endl;
+    cin>>cc;
+    int total=c*cc;
+    cout<<"Numarul total de creioane este "<<total<<endl;
 }
-
-
-
-
+    int main() {
+    tema1();
+    }
