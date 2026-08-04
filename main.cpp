@@ -141,7 +141,7 @@ void ex7TipuriDeDate() {
     int suma=x+y;
     int uc=suma%10;
     cout<<"UC("<<x<<"+"<<y<<")=12"<<uc<<endl;
-    
+
 }
 void tema1() {
     int c=0, cc=0;
@@ -152,6 +152,15 @@ void tema1() {
     int total=c*cc;
     cout<<"Numarul total de creioane este "<<total<<endl;
 }
+void tema2() {
+    int p=0, b=0;
+    cout<<"Intoduceti pretul produsului"<<endl;
+    cin>>p;
+    cout<<"Introduceti bancnota";
+    cin>>b;
+    int rest=b-p;
+    cout<<"Restul:"<<rest<<endl;
+}
     int main() {
-    tema1();
+    tema2();
     }
