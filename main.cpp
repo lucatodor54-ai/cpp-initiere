@@ -174,6 +174,17 @@ void tema3() {
     cout<<"totalul de picioare este: "<<totalpicioare<<endl;
     cout<<"totalul de capete este: "<<totalcapete<<endl;
 }
+void tema4() {
+    int  nota1=0, nota2=0, nota3=0;
+    cout<<"Introduceti prima nota"<<endl;
+    cin>>nota1;
+    cout<<"Introduceti a doua nota"<<endl;
+    cin>>nota2;
+    cout<<"Introduceti a treia nota"<<endl;
+    cin>>nota3;
+    int medianotelor=(nota1+nota2+nota3)/3;
+    cout<<"Media notelor este :"<<medianotelor<<endl;
+}
     int main() {
-    tema3();
+    tema4();
     }
