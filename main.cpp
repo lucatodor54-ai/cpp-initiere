@@ -21,8 +21,23 @@ void ex2Afisare() {
     cout<<" *******"<<endl;
 
 }
-
+void ex3Afisare() {
+    cout<<"            1"<<endl;
+    cout<<"           222"<<endl;
+    cout<<"          33333"<<endl;
+    cout<<"         4444444"<<endl;
+    cout<<"        555555555"<<endl;
+    cout<<"       66666666666"<<endl;
+    cout<<"        555555555"<<endl;
+    cout<<"         4444444"<<endl;
+    cout<<"          33333"<<endl;
+    cout<<"           222"<<endl;
+    cout<<"            1"<<endl;
+}
 
 int main() {
-    ex2Afisare();
+    ex3Afisare();
 }
+
+
+
