@@ -161,6 +161,19 @@ void tema2() {
     int rest=b-p;
     cout<<"Restul:"<<rest<<endl;
 }
+void tema3() {
+    int g=0, p=0, o=0;
+    cout<<"Introduceti numarul de gaini"<<endl;
+    cin>>g;
+    cout<<"Introduceti numarul de pisici"<<endl;
+    cin>>p;
+    cout<<"introduceti numarul de oameni"<<endl;
+    cin>>o;
+    int totalpicioare=g*2 + p*4+o*2;
+    int totalcapete=g+p+o;
+    cout<<"totalul de picioare este: "<<totalpicioare<<endl;
+    cout<<"totalul de capete este: "<<totalcapete<<endl;
+}
     int main() {
-    tema2();
+    tema3();
     }
