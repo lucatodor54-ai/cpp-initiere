@@ -126,10 +126,24 @@ void ex6TipuriDeDate() {
     cin>>g;
     cout<<"Introduceti numarul de pisici"<<endl;
     cin>>p;
-    
+    int totalPicioare=g*2 + p*4+2;
+    cout<<"Numarul total de picioare este egal cu "<<totalPicioare<<endl;
+}
+
+void ex7TipuriDeDate() {
+    //13+23=>36 ultima cifra este 6
+    //36%10=>6
+    int x=0, y=0;
+    cout<<"introduceti variabila x"<<endl;
+    cin>>x;
+    cout<<"introduceti variabila y"<<endl;
+    cin>>y;
+    int suma=x+y;
+    int uc=suma%10;
+    cout<<"UC("<<x<<"+"<<y<<")=12"<<uc<<endl;
 }
 int main() {
-   ex5TipuriDeDate();
+   ex7TipuriDeDate();
 }
 
 
