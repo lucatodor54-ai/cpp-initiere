@@ -14,9 +14,15 @@ void ex1Afisare() {
     cout<<"ana are mere";
 }
 
+void ex2Afisare() {
+    cout<<"    *"<<endl;
+    cout<<"   ***"<<endl;
+    cout<<"  *****"<<endl;
+    cout<<" *******"<<endl;
+
+}
+
+
 int main() {
-
-
-    ex1Afisare();
-
+    ex2Afisare();
 }
