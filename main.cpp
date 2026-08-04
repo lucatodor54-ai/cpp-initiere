@@ -97,10 +97,41 @@ void ex3TipuriDeDate() {
     int suma=x+y;
     cout<<x<<"+"<<y<<"="<<suma<<endl;
 }
+void ex4TipuriDeDate() {
+    int a = 0;//atribuire directa
+    cout<<"Introduceti numarul de globuri albe";
+    cin>>a;
+    int r=2*a;
+    int v= r - 3;
+    int total=a+r+v;
+    cout<<"In stoc avem globuri"<<endl;
+    cout<<a<<" albe"<<endl;
+    cout<<r<<" rosii"<<endl;
+    cout<<v<<" verzi"<<endl;
+    cout<<"=========Total========= "<<total<<endl;
 
-int main() {
-   ex3TipuriDeDate();
+
 }
+
+void ex5TipuriDeDate() {
+
+    int g=4, p=4;//atribuire directa
+    int totalPicioare=g*2 + p*4+2;
+    cout <<"In ograda avem "<<g<<" gaini  "<<p<<" pisici  si 1 om prin urmare avem "<<totalPicioare<<" picoare"<<endl;
+}
+
+void ex6TipuriDeDate() {
+    int g=0, p=0;
+    cout<<"Introduceti numarul de gaini"<<endl;
+    cin>>g;
+    cout<<"Introduceti numarul de pisici"<<endl;
+    cin>>p;
+    
+}
+int main() {
+   ex5TipuriDeDate();
+}
+
 
 
 
