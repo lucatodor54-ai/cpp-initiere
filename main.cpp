@@ -2,7 +2,7 @@
 using namespace std;
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 //todo
-// Instructiunea de afisare
+// =========Instructiunea de afisare
 //  cout<<"test"; //afiseaza pe ecran ce este in ghilimele
 //  cout<<"test2"<<endl; imi pune un rand liber dupa test2
 //
@@ -35,8 +35,71 @@ void ex3Afisare() {
     cout<<"            1"<<endl;
 }
 
+//todo
+// ===============Tipuri de date
+// int -> numar intreg
+// double sau float-> numar cu virgula
+// char -> caracter
+// bool -> adevarat sau fals
+// ===============Declarare si atribuire
+//  int x; -> am declarat o variabila de tip int
+//  Obs !!!
+//  nu putem declara o variabila de mai multe ori ,dar putem sa-i atribuim o noua valoare
+//  x=5; i-am atribuit lui x valoarea 5
+//  x=10;i-am atribuit lui x valoarea 10
+//  Obs! o variabila retine ultima valoare atribuita
+//  cout<<x<<endl;  o sa afiseze valoarea retinuta in x
+//  Obs!
+//  in cpp orice valaore diferita de 0 este perceputa ca si true
+//  0 este false
+//  ================Operatori aritmetici
+//  - scadere
+//  + adunare
+//  * inmultire
+//  / impartire
+//    --> (int) 5/2 => 2
+//    -->(double) 5/2=>2.5
+//  % rest doar la numere intregi  5%2=>1
+//
+//
+//
+
+void ex1TipuriDeDate() {
+
+    int x=7;// am declarat o variabila x si i-am atribuit valoarea 7
+    x=12;// am atribuit lui x valoarea 12
+    cout<<x<<endl;
+    double a=12.7;
+    cout<<"este o valoare double "<<a<<endl;
+    char test='a';
+    test='b';
+    cout<<"este o valoare char "<<test<<endl;
+    bool b=true;
+    b=false;
+    b= true;
+    cout<<"este o valoare bool "<<b<<endl;
+}
+void ex2TipuriDeDate() {
+
+    int x=122,y=13; //atribuire directa
+    int suma=x+y;
+    cout<<x<<"+"<<y<<"="<<suma<<endl;
+}
+
+
+void ex3TipuriDeDate() {
+
+    int x=0,y=0; //atribuire de la tastatura
+    cout<<"x=";
+    cin>>x;
+    cout<<"y=";
+    cin>>y;
+    int suma=x+y;
+    cout<<x<<"+"<<y<<"="<<suma<<endl;
+}
+
 int main() {
-    ex3Afisare();
+   ex3TipuriDeDate();
 }
 
 
