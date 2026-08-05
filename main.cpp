@@ -197,6 +197,15 @@ void tema5() {
     cout<<"fiecare copil primeste " <<bomboanepentrufiecarecopil<<" bomboane"<<endl;
     cout<<"raman "<<catramanerest<<" bomboane"<<endl;
 }
+
+void tema6() {
+    int b=0, l=0;
+    cout<<"Introduceti suma in bani"<<endl;
+    cin>>b;
+    int sumainlei=b/100;
+    int rest=b%100;
+    cout<<"ai "<<sumainlei<<" lei si "<<rest<<" de bani"<<endl;
+}
     int main() {
-    tema5();
+    tema6();
     }
