@@ -167,12 +167,12 @@ void tema3() {
     cin>>g;
     cout<<"Introduceti numarul de pisici"<<endl;
     cin>>p;
-    cout<<"introduceti numarul de oameni"<<endl;
+    cout<<"Introduceti numarul de oameni"<<endl;
     cin>>o;
-    int totalpicioare=g*2 + p*4+o*2;
-    int totalcapete=g+p+o;
-    cout<<"totalul de picioare este: "<<totalpicioare<<endl;
-    cout<<"totalul de capete este: "<<totalcapete<<endl;
+    int numaruldecapete=g+p+o;
+    int numaruldepicioare=g*2+p*4+o*2;
+    cout<<"numarul total de capete este: "<<numaruldecapete<<endl;
+    cout<<"numarul total de picioare este : "<<numaruldepicioare<<endl;
 }
 void tema4() {
     int  nota1=0, nota2=0, nota3=0;
@@ -185,6 +185,18 @@ void tema4() {
     int medianotelor=(nota1+nota2+nota3)/3;
     cout<<"Media notelor este :"<<medianotelor<<endl;
 }
+
+void tema5() {
+    int b=0, c=0;
+    cout<<"Introduceti numarul de bomboane"<<endl;
+    cin>>b;
+    cout<<"Introduceti numarul de copii"<<endl;
+    cin>>c;
+    int bomboanepentrufiecarecopil=b/c;
+    int catramanerest=b%c;
+    cout<<"fiecare copil primeste " <<bomboanepentrufiecarecopil<<" bomboane"<<endl;
+    cout<<"raman "<<catramanerest<<" bomboane"<<endl;
+}
     int main() {
-    tema4();
+    tema5();
     }
