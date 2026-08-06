@@ -206,6 +206,147 @@ void tema6() {
     int rest=b%100;
     cout<<"ai "<<sumainlei<<" lei si "<<rest<<" de bani"<<endl;
 }
+
+    void tema7() {
+    int varsta;
+    cout<<"Introduceti varsta"<<endl;
+    cin>>varsta;
+    if (varsta >= 18)
+    {
+        cout<<"Esti major";
+    }
+    else
+    {
+        cout<<"Esti minor";
+    }
+}
+void tema8() {
+    int numar;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>numar;
+    if (numar%2==0)
+    {
+        cout<<"Numarul este par";
+    }
+    else
+    {
+        cout<<"Numarul este impar";
+    }
+}
+void tema9() {
+    int a, b;
+    cout<<"Introduceti un numar a"<<endl;
+    cin>>a;
+    cout<<"Introduceti un numar b"<<endl;
+    cin>>b;
+    if (a>b) {
+        cout<<"Numarul mai mare este a";
+    }
+    if (a<b) {
+        cout<<"Numarul mai mare este b";
+    }
+    if (a==b) {
+        cout<<"Numerele sunt egale";
+    }
+}
+void tema10() {
+    int numar;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>numar;
+    if (numar == 10) {
+        cout<<"Excelent";
+    }
+    if (numar == 8 || numar == 9) {
+        cout<<"Foarte bine";
+    }
+    if (numar == 7 || numar == 6) {
+        cout<<"Bine";
+    }
+    if (numar == 5) {
+        cout<<"Promovat";
+    }
+    if (numar<5) {
+        cout<<"Respins";
+    }
+}
+void tema11() {
+    int varsta;
+    cout<<"Introduceti varsta"<<endl;
+    cin>>varsta;
+    if (varsta > 18) {
+        cout<<"Facultate sau serviciu";
+    }
+    else if ( varsta >=7 && varsta <=14)
+    {
+        cout<<"Scoala generala";
+    }
+    else if (varsta >=15 && varsta <=18)
+    {
+        cout<<"Liceu";
+    }
+    else
+    {
+        cout<<"Gradinita";
+    }
+}
+void tema12() {
+    int a=0, b=0, c=0;
+    cout<<"Introduceti un numar a"<<endl;
+    cin>>a;
+    cout<<"Introduceti un numar b"<<endl;
+    cin>>b;
+    cout<<"Introduceti un numar c"<<endl;
+    cin>>c;
+    if (a>b &&  a>c) {
+        cout<<"Numarul mai mare este a";
+    }
+    else if (b>a && b>c) {
+        cout<<"Numarul mai mare este b";
+    }
+    else if (c>a && c>b) {
+        cout<<"Numarul mai mare este c";
+    }
+    else if (a==b && b==c) {
+        cout<<"Numerele sunt egale";
+    }
+}
+void tema13() {
+    for (int i=1;i<=10;i++)
+    {
+        cout<<i<<endl;
+    }
+}
+void tema14() {
+ for  (int i=10;i>=1;i--)
+        cout<<i<<endl;
+}
+void tema15() {
+    for (int i=2;i<=20; i +=2) {
+        cout<<i<<endl;
+    }
+}
+void tema16() {
+    for (int i=20; i>=2; i-=2) {
+        cout<<i<<endl;
+    }
+}
+void tema17() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=0;i<=10; i++) {
+        cout<<n<<"x"<<i<<"="<<n*i<<endl;
+    }
+}
+void tema18() {
+    int b;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>b;
+    for (int i=0; i<=20; i++) {
+        cout<<b<<"x"<<i<<"="<<b*i<<endl;
+    }
+}
     int main() {
-    tema6();
+    tema18();
+        return 0;
     }
