@@ -346,7 +346,110 @@ void tema18() {
         cout<<b<<"x"<<i<<"="<<b*i<<endl;
     }
 }
+void tema19() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=n; i>=1; i--) {
+        cout<<i<<endl;
+    }
+}
+void tema20() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=1; i<=n; i++) {
+
+    if (i % 3 == 0 )
+        cout<<i<<endl;
+    }
+}
+void tema21() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=1;i<=n; i++) {
+        if (i % 2 == 1)
+            cout<<i<<endl;
+    }
+}
+void tema22() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=n; i>=1; i--) {
+        if (i % 2 == 0)
+            cout<<i<<endl;
+    }
+}
+void tema23() {
+    int i=10;
+    while (i<=100) {
+        cout<<i<<endl;
+        i++;
+    }
+}
+void tema24() {
+    int i=2;
+    while (i<=20) {
+        if (i%2 == 0)
+            cout<<i<<endl;
+        i++;
+    }
+}
+void tema25() {
+    int n;
+    cout<<"Introduceti un numar"<<endl;
+    cin>>n;
+    for (int i=1;i<=n;i++) {
+        if (i % 2 == 0)
+            cout<<i<<endl;
+    }
+}
+void tema26() {
+    int a=0, b=0, c=0;
+    cout<<"Introduceti un numar a"<<endl;
+    cin>>a;
+    cout<<"Introduceti un numar b"<<endl;
+    cin>>b;
+    cout<<"Introduceti un numar c"<<endl;
+    cin>>c;
+     if(a>b && a>c) {
+        cout<<"Numarul cel mai mare este a"<<endl;
+    }
+        else if (b>a && b>c) {
+            cout<<"Cel mai mare numar este b"<<endl;
+        }
+           else if (c>a && c>b) {
+                cout<<"Cel mai mare numar este c"<<endl;
+            }
+                else {
+                    cout<<"Numerele sunt egale"<<endl;
+                }
+}
+void tema27() {
+    int n;
+    cout<<"Introduceti un numar de doua cifre"<<endl;
+    cin>>n;
+    int zeci= n/10;
+    int unitati= n%10;
+    cout<<"Cifra zecilor este:"<<zeci<<endl;
+    cout<<"Cifra unitatilor este:"<<unitati<<endl;
+    cout<<"Suma cifrelor este:"<<zeci+unitati<<endl;
+}
+void tema28() {
+    int o;
+    cout<<"Introduceti o durata in secunde"<<endl;
+    cin>>o;
+    int secunde=o;
+    int minute=secunde/60;
+    int ore= minute/60;
+    cout<<"Secunde:"<<secunde<<endl;
+    cout<<"Minute:"<<minute<<endl;
+    cout<<"Ore:"<<ore<<endl;
+}
+
     int main() {
-    tema18();
+    tema28();
         return 0;
     }
