@@ -286,6 +286,7 @@ void tema11() {
         cout << "Gradinita";
     }
 }
+
 //
 void tema12() {
     int a = 0, b = 0, c = 0;
@@ -296,10 +297,10 @@ void tema12() {
     cout << "Introduceti un numar c" << endl;
     cin >> c;
     //a=5 b=5 c=3
-    if (a==b&&b==c) {
-        cout<<"sunt toate egale";
-    }else {
-        if (a >=b && a >=c){
+    if (a == b && b == c) {
+        cout << "sunt toate egale";
+    } else {
+        if (a >= b && a >= c) {
             cout << "Numarul mai mare este a";
         } else if (b >= a && b >= c) {
             cout << "Numarul mai mare este b";
@@ -307,7 +308,6 @@ void tema12() {
             cout << "Numarul mai mare este c";
         }
     }
-
 }
 
 void tema13() {
@@ -465,58 +465,92 @@ void tema29() {
     double circumference = 2 * PI * radius;
     std::cout << circumference << "cm";
 }
+
 //exercitii fisa  if
 void tema30() {
     int s;
     cout << "Introduceti o varsta" << endl;
     cin >> s;
-    if (s>0) {
+    //conditie de existenta varsta
+    if (s > 0) {
         if (s < 7) {
             cout << "Bilet gratuit";
-        }else if (s >= 7 && s <=17) {
+        } else if (s >= 7 && s <= 17) {
             cout << "Bilet redus:15 lei";
-        }else {
+        } else {
             cout << "Bilet:30 de lei";
         }
-    }else {
-        cout<<"varsta invalida";
+    } else {
+        cout << "varsta invalida";
     }
-
 }
+
 void tema31() {
-    int a = 0, b=0, c = 0;
-    cout << "Introduceti un numar a"<< endl;
+    int a = 0, b = 0, c = 0;
+    cout << "Introduceti un numar a" << endl;
     cin >> a;
-    cout << "Introduceti un numar b"<< endl;
+    cout << "Introduceti un numar b" << endl;
     cin >> b;
-    cout << "Introduceti un numar c"<< endl;
+    cout << "Introduceti un numar c" << endl;
     cin >> c;
     //cazul cand a este cel mai mic
-    if ( a <= b && a <= c) {
-        if (b<c) {
-            cout<<a<<" "<<b<<" "<<c<<endl;
-        }else {
-            cout<<a<<" "<<c<<" "<<b<<endl;
+    if (a <= b && a <= c) {
+        if (b < c) {
+            cout << a << " " << b << " " << c << endl;
+        } else {
+            cout << a << " " << c << " " << b << endl;
         }
     }
     //cazul cand b este cel mai mic
-    if ( b<=a && b<=c) {
-        if (a<c) {
-            cout<<b<<" "<<a<<" "<<c<<endl;
-        }
-        else {
-            cout <<b<<" "<<c<<" "<<a<<endl;
+    if (b <= a && b <= c) {
+        if (a < c) {
+            cout << b << " " << a << " " << c << endl;
+        } else {
+            cout << b << " " << c << " " << a << endl;
         }
     }
     //cazul cand c este cel mai mic
-    if (c<=a && c<=b) {
-        if (a<b) {
-            cout<<c<<" "<<a<<" "<<b<<endl;
-        }
-            else {
-                cout <<c<<" "<<b<<" "<<a<<endl;
-            }
+    if (c <= a && c <= b) {
+        if (a < b) {
+            cout << c << " " << a << " " << b << endl;
+        } else {
+            cout << c << " " << b << " " << a << endl;
         }
     }
+}
+
+inline void tema32() {
+    int sumaExtrasa = 0;
+    int sold = 1000;
+    cout << "Suma dorita" << endl;
+    cin >> sumaExtrasa;
+    //conditie de existenta
+
+    if (sumaExtrasa > 0 && sumaExtrasa % 10 == 0 && sumaExtrasa <= sold) {
+        int bac100 = sumaExtrasa / 100; //780 /100=>7
+        sumaExtrasa = sumaExtrasa % 100; //780%100 =>80
+        int bac50 = sumaExtrasa / 50;
+        sumaExtrasa = sumaExtrasa % 50;
+        int bac10 = sumaExtrasa / 10;
+        sumaExtrasa = sumaExtrasa % 10;
+
+        if (bac100) {
+            // daca bac100 diferit de zero
+            cout << bac100 << " bacnote de 100" << endl;
+        }
+        if (bac50) {
+            cout << bac50 << " bacnote de 50" << endl;
+            if (bac10) {
+                cout << bac10 << " bacnote de 10" << endl;
+            }
+        }
+    } else if (sumaExtrasa <= 0) {
+        cout << "Suma invalida" << endl;
+    } else if (sumaExtrasa % 10 != 0) {
+        cout << "Suma trebuie sa fie multiplu de 10" << endl;
+    } else {
+        cout << "Fonduri insuficiente" << endl;
+    }
+}
 
 #endif //INITIERE_OPERATII_CONDITIONALE_H
