@@ -470,12 +470,16 @@ void tema30() {
     int s;
     cout << "Introduceti o varsta" << endl;
     cin >> s;
-    if (s < 7 && s >= 0) {
-        cout << "Bilet gratuit";
-    }else if (s >= 7 && s <=17) {
-        cout << "Bilet redus:15 lei";
+    if (s>0) {
+        if (s < 7) {
+            cout << "Bilet gratuit";
+        }else if (s >= 7 && s <=17) {
+            cout << "Bilet redus:15 lei";
+        }else {
+            cout << "Bilet:30 de lei";
+        }
     }else {
-        cout << "Bilet:30 de lei";
+        cout<<"varsta invalida";
     }
 
 }
