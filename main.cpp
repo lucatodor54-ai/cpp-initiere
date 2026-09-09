@@ -406,6 +406,7 @@ void tema25() {
             cout<<i<<endl;
     }
 }
+
 void tema26() {
     int a=0, b=0, c=0;
     cout<<"Introduceti un numar a"<<endl;
@@ -414,18 +415,18 @@ void tema26() {
     cin>>b;
     cout<<"Introduceti un numar c"<<endl;
     cin>>c;
-     if(a>b && a>c) {
+    if(a>b && a>c) {
         cout<<"Numarul cel mai mare este a"<<endl;
     }
-        else if (b>a && b>c) {
-            cout<<"Cel mai mare numar este b"<<endl;
-        }
-           else if (c>a && c>b) {
-                cout<<"Cel mai mare numar este c"<<endl;
-            }
-                else {
-                    cout<<"Numerele sunt egale"<<endl;
-                }
+    else if (b>a && b>c) {
+        cout<<"Cel mai mare numar este b"<<endl;
+    }
+    else if (c>a && c>b) {
+        cout<<"Cel mai mare numar este c"<<endl;
+    }
+    else {
+        cout<<"Numerele sunt egale"<<endl;
+    }
 }
 void tema27() {
     int n;
@@ -438,18 +439,23 @@ void tema27() {
     cout<<"Suma cifrelor este:"<<zeci+unitati<<endl;
 }
 void tema28() {
-    int o;
-    cout<<"Introduceti o durata in secunde"<<endl;
-    cin>>o;
-    int secunde=o;
-    int minute=secunde/60;
-    int ore= minute/60;
-    cout<<"Secunde:"<<secunde<<endl;
-    cout<<"Minute:"<<minute<<endl;
-    cout<<"Ore:"<<ore<<endl;
-}
-
+                        int o;
+                        cout<<"Introduceti o durata in secunde"<<endl;
+                        cin>>o;
+                        int secunde=o;
+                        int minute=secunde/60;
+                        int ore= minute/60;
+                        cout<<"Secunde:"<<secunde<<endl;
+                        cout<<"Minute:"<<minute<<endl;
+                        cout<<"Ore:"<<ore<<endl;
+                    }
+                    void tema29() {
+                        const double PI = 3.14159;
+                        double radius = 12;
+                        double circumference = 2 * PI * radius;
+                        std::cout<<circumference<<"cm";
+                    }
     int main() {
-    tema28();
+    tema29();
         return 0;
     }
