@@ -483,6 +483,40 @@ void tema30() {
     }
 
 }
-
+void tema31() {
+    int a = 0, b=0, c = 0;
+    cout << "Introduceti un numar a"<< endl;
+    cin >> a;
+    cout << "Introduceti un numar b"<< endl;
+    cin >> b;
+    cout << "Introduceti un numar c"<< endl;
+    cin >> c;
+    //cazul cand a este cel mai mic
+    if ( a <= b && a <= c) {
+        if (b<c) {
+            cout<<a<<" "<<b<<" "<<c<<endl;
+        }else {
+            cout<<a<<" "<<c<<" "<<b<<endl;
+        }
+    }
+    //cazul cand b este cel mai mic
+    if ( b<=a && b<=c) {
+        if (a<c) {
+            cout<<b<<" "<<a<<" "<<c<<endl;
+        }
+        else {
+            cout <<b<<" "<<c<<" "<<a<<endl;
+        }
+    }
+    //cazul cand c este cel mai mic
+    if (c<=a && c<=b) {
+        if (a<b) {
+            cout<<c<<" "<<a<<" "<<b<<endl;
+        }
+            else {
+                cout <<c<<" "<<b<<" "<<a<<endl;
+            }
+        }
+    }
 
 #endif //INITIERE_OPERATII_CONDITIONALE_H
