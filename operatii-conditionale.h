@@ -553,4 +553,40 @@ inline void tema32() {
     }
 }
 
+    //Automatul de cafea provocare fisa 2 if
+inline void tema33() {
+    int a=0;
+    int sold=275;
+    cout << "Introduceti suma dorita"<<endl;
+    cin >> a;
+    if ( a > 0 && a <= sold) {
+        int monede50 = a / 50;
+        a= a % 50;
+        int moneda10 = a / 10;
+        a = a % 10;
+        int moneda5 = a / 5;
+        a = a % 5;
+        if ( a !=0) {
+            cout << "Nu pot da restul exact !"<<endl;
+        }
+        if ( monede50) {
+            cout << monede50 << " monede de 50" << endl;
+        }
+            if ( moneda10 ) {
+                cout << moneda10 << " monede de 10" << endl;
+            }
+            if ( moneda5 ) {
+                cout << moneda5 << " monede de 5" << endl;
+            }
+        }
+        else if (a <= 0) {
+            cout << "Suma invalida" << endl;
+        }
+    else if ( a == sold){
+        cout << "Suma exacta, cafea buna !"<<endl;
+        }
+    else
+        cout << "Suma invalida" << endl;
+}
+
 #endif //INITIERE_OPERATII_CONDITIONALE_H
