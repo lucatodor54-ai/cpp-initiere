@@ -588,5 +588,135 @@ inline void tema33() {
     else
         cout << "Suma invalida" << endl;
 }
+//exercitii if - parcarea
+inline void tema34() {
+    int minute = 0;
 
+    cout << "Introduceti minutele dorite: ";
+    cin >> minute;
+
+    if (minute < 0) {
+        cout << "Valoare invalida" << endl;
+    }
+    else if (minute == 0) {
+        cout << "Gratuit" << endl;
+    }
+    else {
+        int ore = (minute + 59) / 60;
+        int pret;
+
+        if (ore == 1) {
+            pret = 5;
+        }
+        else {
+            pret = 5 + (ore - 1) * 3;
+        }
+
+        if (pret > 25) {
+            pret = 25;
+        }
+
+        cout << "Total de plata: " << pret << " lei" << endl;
+    }
+}
+//Citește numărul de minute petrecute într-un parc de distracții.
+//Minute negative → Valoare invalida
+//0 minute → Gratuit
+//Pentru 1–30 minute → 4 lei
+//Pentru fiecare interval de 30 de minute început în plus → 2 lei
+//Prețul total nu poate depăși 20 lei
+
+inline void tema35() {
+    int minute = 0;
+    cout << "Introduceti minutele dorite: ";
+    cin >> minute;
+    if (minute < 0) {
+        cout << "Valoare invalida" << endl;
+    }
+    else if ( minute == 0) {
+    cout << "Gratuit" << endl;
+        }
+        else {
+            int pret;
+            if ( minute <= 30 ) {
+                pret = 4;
+            }
+                else {
+                    pret = 4 + ((minute - 30 + 29) / 30) * 2;;
+                    if (pret>20) {
+                        pret = 20;
+                    }
+                    cout << "Total de plata: " << pret << " lei" << endl;
+                }
+            }
+        }
+//Citește numărul de minute petrecute într-o parcare de cinema.
+//Minute negative → Valoare invalida
+//0 minute → Gratuit
+//Primele 60 de minute → 6 lei
+//Fiecare oră începută în plus → 4 lei
+//Prețul maxim este 22 lei
+
+inline void tema36() {
+    int minute = 0;
+
+    cout << "Introduceti minutele dorite: ";
+    cin >> minute;
+
+    if (minute < 0) {
+        cout << "Valoare invalida" << endl;
+    }
+    else if (minute == 0) {
+        cout << "Gratuit" << endl;
+    }
+    else {
+        int pret;
+
+        if (minute <= 60) {
+            pret = 6;
+        }
+        else {
+            pret = 6 + ((minute - 60 + 59) / 60) * 4;
+
+            if (pret > 22) {
+                pret = 22;
+            }
+        }
+
+        cout << "Total de plata: " << pret << " lei" << endl;
+    }
+}
+//Citește numărul de minute cât a stat o mașină la spălătorie.
+//Citește numărul de minute cât a stat o mașină la spălătorie.
+//Minute negative → Valoare invalida
+//0 minute → Gratuit
+//Primele 45 de minute → 7 lei
+//Fiecare 45 de minute începute în plus → 5 lei
+//prețul maxim este 27 lei
+
+inline void tema37() {
+    int minute = 0;
+    cout << "Introduceti minutele dorite: ";
+    cin >> minute;
+    if ( minute < 0) {
+        cout << " Valoare invalida " << endl;
+    }
+    else if ( minute == 0 ) {
+        cout << " Gratuit " << endl;
+    }
+    else {
+        int pret;
+
+        if ( minute <= 45)
+            pret = 7;
+
+        else {
+            pret = 7 + (( minute - 45 + 44) / 45 ) * 5;
+
+        if ( pret > 27 )
+            pret = 27;
+        }
+        cout << "Total de plata: " << pret << " lei" << endl;
+    }
+}
 #endif //INITIERE_OPERATII_CONDITIONALE_H
