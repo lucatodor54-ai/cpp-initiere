@@ -556,7 +556,7 @@ inline void tema32() {
     //Automatul de cafea provocare fisa 2 if
 inline void tema33() {
     int a=0;
-    int sold=275;
+    int sold=500;
     cout << "Introduceti suma dorita"<<endl;
     cin >> a;
     if ( a > 0 && a <= sold) {
@@ -569,13 +569,13 @@ inline void tema33() {
         if ( a !=0) {
             cout << "Nu pot da restul exact !"<<endl;
         }
-        if ( monede50) {
+       else if ( monede50) {
             cout << monede50 << " monede de 50" << endl;
         }
-            if ( moneda10 ) {
+            else if ( moneda10 ) {
                 cout << moneda10 << " monede de 10" << endl;
             }
-            if ( moneda5 ) {
+            else if ( moneda5 ) {
                 cout << moneda5 << " monede de 5" << endl;
             }
         }
