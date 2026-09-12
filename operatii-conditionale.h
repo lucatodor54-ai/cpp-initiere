@@ -719,4 +719,36 @@ inline void tema37() {
         cout << "Total de plata: " << pret << " lei" << endl;
     }
 }
+inline void tema38() {
+    int g = 0;
+
+    cout << "Introduceti greutatea: " << endl;
+    cin >> g;
+
+    if (g > 30000) {
+        cout << "Colet prea greu" << endl;
+    }
+    else if (g > 0) {
+        int kg = g / 1000;
+        int grame = g % 1000;
+
+        cout << kg << " kg si " << grame << " grame" << endl;
+    }
+    else {
+        cout << "Greutate invalida" << endl;
+    }
+
+    if (g > 0 && g <= 30000) {
+        if (g < 1000) {
+            cout << "12 lei" << endl;
+        }
+        else if (g <= 5000) {
+            cout << "20 de lei" << endl;
+        }
+        else {
+            cout << "35 de lei" << endl;
+        }
+    }
+}
+
 #endif //INITIERE_OPERATII_CONDITIONALE_H
