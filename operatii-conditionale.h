@@ -764,4 +764,20 @@ inline void tema39 () {
         cout << ore << " ore , "  << minute << "  minute , " << sec << " secunde" <<endl;
     }
 }
+inline void tema40 () {
+    int b = 0 , s = 350;
+    cout << " Introduceti banii: " << endl;
+    cin >> b;
+    if ( b <= 0 ) {
+        cout << "Pret invalid" << endl;
+    }
+    else if  ( b < s) {
+        cout << "Nu-ti ajunge" << endl;
+    }
+    else {
+        int sandvisuri = b/s;
+        int ramasi = b % s;
+        cout << sandvisuri << "  sandvisuri," << " iti raman " << ramasi << " de bani" << endl;
+    }
+}
 #endif //INITIERE_OPERATII_CONDITIONALE_H
