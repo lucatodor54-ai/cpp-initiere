@@ -780,4 +780,25 @@ inline void tema40 () {
         cout << sandvisuri << "  sandvisuri," << " iti raman " << ramasi << " de bani" << endl;
     }
 }
+inline void tema41 () {
+    int k=0;
+    cout << "Introduceti numarul de kwh: " << endl;
+    cin >> k;
+    if ( k < 0 ) {
+        cout << "Valoare invalida" << endl;
+    }
+    if( k == 0) {
+        cout << " Consum 0 " << endl;
+    }
+    int cost;
+    if ( k <= 100) {
+        cost = k * 60;
+    }
+    else {
+         cost = 100 * 60 + (k - 100) * 85;
+    }
+    int lei = cost / 100;
+    int bani = cost % 100;
+    cout << "De plata: " << lei << " lei si " << bani << " bani" << endl;
+}
 #endif //INITIERE_OPERATII_CONDITIONALE_H
