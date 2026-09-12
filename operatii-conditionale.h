@@ -750,5 +750,18 @@ inline void tema38() {
         }
     }
 }
-
+inline void tema39 () {
+    int s = 0;
+    cout << "Introduceti durata in secunde: " << endl;
+    cin >> s;
+    if ( s < 0 ) {
+        cout << "Valoare invalida" << endl;
+    }
+    else {
+        int ore = s / 3600;
+        int minute = (s % 3600) / 60;
+        int sec = s % 60;
+        cout << ore << " ore , "  << minute << "  minute , " << sec << " secunde" <<endl;
+    }
+}
 #endif //INITIERE_OPERATII_CONDITIONALE_H
