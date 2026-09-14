@@ -801,4 +801,61 @@ inline void tema41 () {
     int bani = cost % 100;
     cout << "De plata: " << lei << " lei si " << bani << " bani" << endl;
 }
+
+inline void tema42() {
+    int greutate, clasa;
+    int limita;
+    cout << "Introduceti greutatea in grame: " << endl;
+    cin >> greutate;
+    cout << "Introduceti clasa biletului: " << endl;
+    cin >> clasa;
+    if ( clasa != 1 && clasa != 2) {
+        cout << "Clasa invalida" << endl;
+    }
+    else {
+        if ( clasa == 1) {
+            limita = 32000;
+        }
+        else {
+            limita = 23000;
+        }
+        if ( greutate <= limita) {
+            cout << "Bagaj acceptat" << endl;
+        }
+        else {
+            int depasire = greutate - limita;
+            int kg = (depasire + 999) / 1000;
+            int plata = kg * 40;
+            cout << "Total de plata: " << plata << " lei" << endl;
+        }
+    }
+}
+inline void tema43 () {
+    int  greutate, tip;
+    int limita;
+    cout << "Introduceti greutatea coletului in grame: " << endl;
+    cin >> greutate;
+    cout << "Introduceti tipul de livrare: " << endl;
+    cin >> tip;
+    if ( tip != 1 && tip != 2) {
+        cout << "Tip invalid" << endl;
+    }
+    else {
+        if ( tip == 1) {
+            limita = 5000;
+        }
+        else {
+            limita = 10000;
+        }
+        if ( greutate <= limita ) {
+            cout << "Colet acceptat" << endl;
+        }
+        else {
+            int depasire = greutate - limita;
+            int kg = (depasire + 999) / 1000;
+            int plata = kg * 15;
+            cout << "Total de plata: " << plata << " lei" << endl;
+        }
+    }
+}
 #endif //INITIERE_OPERATII_CONDITIONALE_H
