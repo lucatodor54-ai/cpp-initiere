@@ -874,5 +874,74 @@ int loc;
         cout << "Locul: " << pozitie << endl;
     }
 }
+inline void tema45 () {
+    int locul;
+    cout << "Introduceti numarul de pe bilet: " << endl;
+    cin >> locul;
+    if ( locul <= 0 || locul > 225 ) {
+        cout << "Locul inexistent" <<endl;
+    }
+    else {
+        int rand;
+        int pozitie;
+        rand = ( locul - 1) / 15 + 1;
+        pozitie = ( locul - 1) % 15 + 1;
+        cout << "Randul: " << rand << endl;
+        cout << "Locul: " << pozitie << endl;
+    }
+}
+inline void tema46 () {
+int locuri;
+    cout << "Introduceti numarul de pe bilet: " << endl;
+    cin >> locuri;
+    if ( locuri <=0 || locuri > 400 ) {
+        cout << " Loc inexistent" << endl;
+    }
+    else {
+        int randul;
+        int pozitia;
+        randul = ( locuri - 1) / 20 + 1;
+        pozitia = ( locuri - 1 ) % 20 + 1;
+        cout << "Randul: " << randul << endl;
+        cout << "Locul: " << pozitia << endl;
+    }
+}
+inline void tema47 () {
+    int loc;
+    cout << "Introduceti numarul biletului: " << endl;
+    cin >> loc;
+    if ( loc <= 0 || loc > 256 ){
+        cout << "Loc inexistent" << endl;
+    }
+    else {
+        int rand;
+        int pozitie;
+        rand = ( loc - 1 ) / 16 + 1;
+        pozitie = ( loc - 1 ) % 16 + 1;
+        cout << "Randul: " << rand << endl;
+        cout << "Locul: " << pozitie << endl;
+    }
+}
+inline void tema48 () {
+    int luni;
+    cout << "Introduceti perioada dorita (in luni): " << endl;
+    cin >> luni;
+    if ( luni < 0 ) {
+        cout << "Durata invalida" << endl;
+    }
+    else {
+        int ani;
+        int luniramase;
+        ani = luni / 12;
+        luniramase = luni % 12;
+        cout << ani << " Ani" << " si " << luniramase << " Luni" << endl;
+        int pret;
+        pret = 120 * luni;
+        if (luni >= 12) {
+            pret = pret * 90 / 100;
+        }
+        cout << "Pretul abonamentului: " << pret << " lei" << endl;
+    }
+}
 
 #endif //INITIERE_OPERATII_CONDITIONALE_H
