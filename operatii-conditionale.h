@@ -858,4 +858,21 @@ inline void tema43 () {
         }
     }
 }
+inline void tema44 () {
+int loc;
+    cout << "Introduceti numarul de pe bilet: " << endl;
+    cin >> loc;
+    if ( loc <= 0 || loc > 180 ) {
+        cout << "Loc inexistent" << endl;
+    }
+    else {
+        int rand;
+        int pozitie;
+        rand = (loc - 1) / 12 + 1;
+        pozitie = ( loc - 1) % 12 + 1;
+        cout << "Randul: " << rand << endl;
+        cout << "Locul: " << pozitie << endl;
+    }
+}
+
 #endif //INITIERE_OPERATII_CONDITIONALE_H
