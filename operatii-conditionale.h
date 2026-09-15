@@ -943,5 +943,81 @@ inline void tema48 () {
         cout << "Pretul abonamentului: " << pret << " lei" << endl;
     }
 }
+inline void tema49 () {
+    int luni;
+
+    cout << "Introduceti perioada dorita: " << endl;
+    cin >> luni;
+
+    if (luni < 0) {
+        cout << "Durata invalida" << endl;
+    }
+    else {
+        int ani;
+        int luniramase;
+        int pret;
+
+        ani = luni / 12;
+        luniramase = luni % 12;
+
+        cout << ani << " Ani" << " si " << luniramase << " Luni" << endl;
+
+        if (luni >= 12) {
+            pret = 110 * luni;
+            pret = pret * 90 / 100;
+        }
+        else if (luni >= 6) {
+            pret = 130 * luni;
+        }
+        else {
+            pret = 150 * luni;
+        }
+
+        cout << "Pretul abonamentului: " << pret << " lei" << endl;
+    }
+}
+    inline void tema50 () {
+        int tip;
+        int km;
+
+        cout << "Introduceti tipul cursei: " << endl;
+        cin >> tip;
+
+        cout << "Introduceti numarul de kilometri: " << endl;
+        cin >> km;
+
+        if (tip != 1 && tip != 2) {
+            cout << "Tipul cursei invalid" << endl;
+        }
+        else if (km < 0) {
+            cout << "Distanta invalida" << endl;
+        }
+        else {
+            int pret;
+
+            if (tip == 1) {
+                pret = 5;
+
+                if (km <= 10) {
+                    pret = pret + 3 * km;
+                }
+                else {
+                    pret = pret + 3 * 10 + 2 * (km - 10);
+                }
+            }
+            else {
+                pret = 8;
+
+                if (km <= 10) {
+                    pret = pret + 4 * km;
+                }
+                else {
+                    pret = pret + 4 * 10 + 3 * (km - 10);
+                }
+            }
+
+            cout << "Pretul cursei: " << pret << " lei" << endl;
+        }
+    }
 
 #endif //INITIERE_OPERATII_CONDITIONALE_H
