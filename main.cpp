@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "operatii-conditionale.h"
+#include "exercitii-while.h"
 
 int main() {
-    tema53();
+   ex2();
     return 0;
 }
