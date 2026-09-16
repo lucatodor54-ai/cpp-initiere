@@ -1041,5 +1041,56 @@ inline void tema51 () {
     }
 
 }
+inline void tema52 () {
+    int ora;
+    int minutul;
+    int durata;
+    cout << "Introduceti ora: " << endl;
+    cin >> ora;
+    cout << "Introduceti minutul: " << endl;
+    cin >> minutul;
+    cout << " Introduceti durata: " << endl;
+    cin >> durata;
+    if ( ora < 0 || ora > 23 || minutul < 0 || minutul > 59) {
+        cout << "Ora invalida" << endl;
+    }
+    else {
+        int totalminute= ora * 60 + minutul + durata;
+        int orafinala = (totalminute/60) % 24;
+        int minutfinal = totalminute % 60;
+        cout << "Se termina la " << orafinala << ":" << minutfinal << endl;
+    }
+}
+inline void testtema12 () {
+    int a = 0, b = 0, c = 0;
+    cout << "Introduceti un numar a" << endl;
+    cin >> a;
+    cout << "Introduceti un numar b" << endl;
+    cin >> b;
+    cout << "Introduceti un numar c" << endl;
+    cin >> c;
+    if (a == b && b == c) {
+        cout << "Sunt toate egale";
+    }
+    else if (a >= b && a >= c) {
+        cout << "Numarul mai mare este a";
+    }
+    else if (b >= a && b >= c) {
+        cout << "Numarul mai mare este b";
+    }
+    else {
+        cout << "Numarul mai mare este c";
+    }
+}
+// q&a:1. tema12 și tema26 sunt aceeași problemă, rezolvată de tine de două ori. Una tace pe 5 5 3 ,
+//cealaltă răspunde greșit. Care dintre ele e mai periculoasă într-un program real și de ce?
+// mai periculoasa este cea care tace pe 5 5 3, deoarece nu ne putem da seama de eroare si nu o putem rezolva.
 
+// La B4 ți-am spus că double medianotelor = (nota1+nota2+nota3)/3; tot ar da 9 . Explică-mi
+//în cuvintele tale de ce nu ajută că variabila e double .
+// deoarce programul nu citeste variabila double, ci prima data face impartirea.
+
+//3. Ia-ți oricare dintre cele 28 de teme și găsește-mi un input pentru care programul tău nu afișează
+//nimic sau afișează ceva fals. Dacă nu găsești niciunul, spune-mi cum ai verificat.
+//tema 12 - problema ultimul else if
 #endif //INITIERE_OPERATII_CONDITIONALE_H
