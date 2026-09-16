@@ -3,6 +3,6 @@
 #include "operatii-conditionale.h"
 
 int main() {
-    tema50();
+    tema51();
     return 0;
 }

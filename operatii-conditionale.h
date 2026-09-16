@@ -1019,5 +1019,27 @@ inline void tema49 () {
             cout << "Pretul cursei: " << pret << " lei" << endl;
         }
     }
+inline void tema51 () {
+    int ora;
+    int minutul;
+    int durata;
+    cout << "Introduceti ora: " << endl;
+    cin >> ora;
+    cout << "Introduceti minutul: " << endl;
+    cin >> minutul;
+ cout << " Introduceti durata: " << endl;
+    cin >> durata;
+    if ( ora < 0 || ora > 23 || minutul < 0 || minutul > 59) {
+        cout << "Ora invalida" << endl;
+    }
+    else {
+        int totalminute = ora * 60 + minutul + durata;
+        int orafinala = (totalminute/60) % 24;
+        int minutfinal = totalminute % 60;
+        cout << "Se termina la " << orafinala << ":" << minutfinal << endl;
+
+    }
+
+}
 
 #endif //INITIERE_OPERATII_CONDITIONALE_H
