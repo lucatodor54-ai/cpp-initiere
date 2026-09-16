@@ -1082,6 +1082,42 @@ inline void testtema12 () {
         cout << "Numarul mai mare este c";
     }
 }
+//1 euro 498 bani
+//100 centi 498 de bani
+//1 cent 4.98 bani
+//2308 bani
+//100 bani 1 leu
+// 2308 /100 => 23 de lei
+//2308 %100 => 8
+//23 de lei si 8 bani
+// 100 * 4.98= 498 bani
+//comision  0.01 * 4.98= 0.498
+inline void tema53() {
+    int centi;
+    cout << "Introduceti suma in eurocenti: " << endl;
+    cin >> centi;
+    //transformare din centi in bani
+  if ( centi > 0 ) {
+      double bani =4.98*centi;
+      double comision=0;
+      int lei;
+      int restbani;
+      if ( centi < 1000) {
+          comision =0.02*bani;
+      }else {
+          comision = 0.01 * bani;
+      }
+      bani=bani-comision;
+      lei= bani / 100;
+      restbani =(int) bani % 100;
+      cout << "Primesti " << lei << " lei si " << restbani << " bani" << endl;
+
+  }else {
+      cout<<"suma este invalida"<<endl;
+  }
+
+
+}
 // q&a:1. tema12 și tema26 sunt aceeași problemă, rezolvată de tine de două ori. Una tace pe 5 5 3 ,
 //cealaltă răspunde greșit. Care dintre ele e mai periculoasă într-un program real și de ce?
 // mai periculoasa este cea care tace pe 5 5 3, deoarece nu ne putem da seama de eroare si nu o putem rezolva.
@@ -1093,4 +1129,6 @@ inline void testtema12 () {
 //3. Ia-ți oricare dintre cele 28 de teme și găsește-mi un input pentru care programul tău nu afișează
 //nimic sau afișează ceva fals. Dacă nu găsești niciunul, spune-mi cum ai verificat.
 //tema 12 - problema ultimul else if
+
+
 #endif //INITIERE_OPERATII_CONDITIONALE_H
