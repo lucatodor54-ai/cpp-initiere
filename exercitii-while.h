@@ -37,7 +37,128 @@ void ex2 () {
     }
     cout << "sfarsit" << endl;
 }
+void ex3 () {
+    int n=4;
+    int contor=n;
+    while (contor >=1) {
+        cout << contor << endl;
+        contor--;
+    }
+    cout << "Start !" << endl;
+}
+void ex4 () {
+    int contor=0;
+    int n=9;
+    while (contor <=n) {
+        if (contor%2==0) {
+            cout<<contor<<endl;
+        }
+        contor++;
+    }
+}
+void ex5 () {
+  int n;
+    cout <<"Introduceti un numar: " <<endl;
+    cin >> n;
+    int i = 1;
+    while (i <= 10) {
+        cout << n << "x" << i << "="<< n * i << endl;
+        i++;
+    }
+}
+void ex6 () {
+    int n;
+    cout <<"Introduceti un numar: " << endl;
+    cin >> n;
+    int i = 5;
+    while (i <= n) {
+        cout <<i << endl;
+        i+=5;
+    }
+}
+void ex7 () {
+    int n;
+    cout <<"Introduceti un numar: " << endl;
+    cin >> n;
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma +=i;
+        i++;
+    }
+    cout << "Suma este: " << suma << endl;
+}
+// %10 i-au ultima cifra din numar
+// /10 elimin ultima cifra din numar
 
+//todo: suma cifrelor unui numar
+// 123
+// suma=0
+// suma+=123%10 =>suma devine 3
+// 123/10 =>12
+// suma+=12%10 =>suma devine 5
+// 12/10  =>1
+// suma+=1%10 => suma devine 6
+//
+// x=12
+// x+=9
+// x devine 21
+
+//
+// todo: parcurgem algoritmul n=8659 suma=0
+//   n!=0  uc  suma  n
+//   da    9    9   865
+//   da    5    14   86
+//   da    6    20   8
+//   da    8   28    0
+//   nu
+
+void ex8 () {
+    int n;
+    cout <<"Introduceti un numar: " << endl;
+    cin >> n;
+    int suma = 0;
+    while (n!=0) {
+        int uc=n%10;
+        suma+=uc;
+        n/=10;
+    }
+    cout<<"Suma cifrelor numarului introdus este "<<suma<<endl;
+}
+void ex9 () {
+    int n;
+    cout <<"Introduceti un numar: " << endl;
+    cin >> n;
+    int contor=0;
+    int i=1;
+    while ( i <= n) {
+        if ( i % 2 == 0) {
+            contor++;
+        }
+            i++;
+    }
+
+    cout << "Sunt "<< contor << "numere pare" << endl;
+}
+
+//se introduce un numar sa se afiseze suma cifrelor pare pt n = 124
+// n!=0     uc%2==0   suma  n
+//
+
+void ex10 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int suma = 0;
+    while ( n!= 0) {
+        int uc = n%10;
+        if ( uc % 2 == 0) {
+            suma+=uc;
+        }
+            n/=10;
+    }
+    cout << "suma este: " << suma << endl;
+}
 
 
 #endif //INITIERE_EXERCITII_WHILE_H
