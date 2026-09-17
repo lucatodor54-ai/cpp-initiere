@@ -197,5 +197,15 @@ void ex12 () {
             cout << "restul este: " << rest << endl;
         }
     }
+void ex13 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while (n!=0) {
+        double uc = n%10;
+        n/=10;
+        cout << uc << endl;
+    }
+}
 
 #endif //INITIERE_EXERCITII_WHILE_H

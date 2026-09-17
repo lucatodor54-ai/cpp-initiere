@@ -3,6 +3,6 @@
 #include "exercitii-while.h"
 
 int main() {
-   ex12();
+   ex13();
     return 0;
 }
