@@ -142,8 +142,11 @@ void ex9 () {
 }
 
 //se introduce un numar sa se afiseze suma cifrelor pare pt n = 124
-// n!=0     uc%2==0   suma  n
-//
+// n!=0   uc   uc%2==0   suma  n
+// da      4       da       4   12
+// da      2       da       6   1
+// da      1       nu       6   0
+//nu
 
 void ex10 () {
     int n;
@@ -159,6 +162,40 @@ void ex10 () {
     }
     cout << "suma este: " << suma << endl;
 }
+//todo cifra maxima dintr-un numar pt  n=89371 cifraMax=0
+// n!=0    uc    uc>ciframax     ciframax    n
+// da       1        DA              1      8937
+// DA       7         DA             7      893
+// DA       3         nu            -       89
+// DA       9        da            9        8
+// DA       8        NU             -       0
+// NU
 
+//nu
+void ex11() {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int ciframax= 0;
+    while (n!=0) {
+        int uc = n%10;
+        if (uc > ciframax) {
+            ciframax = uc;
+        }
+        n/=10;
+    }
+    cout << "cifra maxima este: " << ciframax << endl;
+}
+void ex12 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    if ( n > 0) {
+            double uc=n%10;
+            cout <<"ultima cifra este: " << uc << endl;
+            double rest = n/=10;
+            cout << "restul este: " << rest << endl;
+        }
+    }
 
 #endif //INITIERE_EXERCITII_WHILE_H
