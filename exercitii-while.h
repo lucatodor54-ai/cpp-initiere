@@ -207,5 +207,15 @@ void ex13 () {
         cout << uc << endl;
     }
 }
-
+void ex14 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int contor=0;
+    while ( n>0) {
+        n/=10;
+        contor++;
+    }
+    cout << "Numarul are: " << contor << " cifre" << endl;
+}
 #endif //INITIERE_EXERCITII_WHILE_H
