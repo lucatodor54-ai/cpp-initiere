@@ -191,9 +191,9 @@ void ex12 () {
     cout << "Introduceti un numar: " << endl;
     cin >> n;
     if ( n > 0) {
-            double uc=n%10;
+            int uc=n%10;
             cout <<"ultima cifra este: " << uc << endl;
-            double rest = n/=10;
+            int rest = n/=10;
             cout << "restul este: " << rest << endl;
         }
     }
@@ -202,7 +202,7 @@ void ex13 () {
     cout << "Introduceti un numar: " << endl;
     cin >> n;
     while (n!=0) {
-        double uc = n%10;
+        int uc = n%10;
         n/=10;
         cout << uc << endl;
     }
@@ -217,5 +217,16 @@ void ex14 () {
         contor++;
     }
     cout << "Numarul are: " << contor << " cifre" << endl;
+}
+void ex15 () {
+    int n;
+    int suma=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while (n!=0) {
+        suma = suma + n%10;
+        n = n/10;
+    }
+    cout << "Suma este: " << suma << endl;
 }
 #endif //INITIERE_EXERCITII_WHILE_H
