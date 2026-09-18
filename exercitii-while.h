@@ -243,6 +243,7 @@ void ex16 () {
     }
     cout << "Numarul are: " << contor << " cifre pare" << endl;
 }
+//pornesc de la 0 pt ca toate cifrele sunt >=0;
 void ex17 () {
     int n;
     cout << "Introduceti un numar: " << endl;
@@ -257,4 +258,20 @@ void ex17 () {
     }
     cout << "Cifra maxima este: " << ciframax << endl;
 }
+//pornesc de la 9 pt ca toate cifrele sunt <=9;
+void ex18 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int ciframin=9;
+    while (n!=0) {
+        int uc = n%10;
+        if ( uc < ciframin) {
+            ciframin = uc ;
+        }
+        n/=10;
+    }
+    cout << "Cifra minima este: " << ciframin << endl;
+}
+
 #endif //INITIERE_EXERCITII_WHILE_H
