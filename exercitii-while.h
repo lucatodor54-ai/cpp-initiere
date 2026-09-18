@@ -229,4 +229,32 @@ void ex15 () {
     }
     cout << "Suma este: " << suma << endl;
 }
+void ex16 () {
+    int n;
+    int contor=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n!=0) {
+        int uc = n%10;
+        n/=10;
+        if ( uc % 2 == 0) {
+           contor++;
+        }
+    }
+    cout << "Numarul are: " << contor << " cifre pare" << endl;
+}
+void ex17 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int ciframax=0;
+    while (n!=0) {
+        int uc = n%10;
+        if (uc > ciframax) {
+            ciframax = uc;
+        }
+        n/=10;
+    }
+    cout << "Cifra maxima este: " << ciframax << endl;
+}
 #endif //INITIERE_EXERCITII_WHILE_H
