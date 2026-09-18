@@ -273,5 +273,16 @@ void ex18 () {
     }
     cout << "Cifra minima este: " << ciframin << endl;
 }
-
+void ex19 () {
+    int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int oglindit = 0;
+    while (n!=0) {
+        int  cifra = n%10;
+        oglindit = oglindit  * 10 + cifra;
+        n/=10;
+    }
+    cout << "Oglindit este: " << oglindit << endl;
+}
 #endif //INITIERE_EXERCITII_WHILE_H
