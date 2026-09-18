@@ -285,4 +285,22 @@ void ex19 () {
     }
     cout << "Oglindit este: " << oglindit << endl;
 }
+    void ex20() {
+      int n;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int oglindit= 0;
+    int original = n;
+    while (n!=0) {
+        int cifra = n%10;
+        oglindit = oglindit * 10 + cifra;
+        n = n/10;
+    }
+        if ( original == oglindit) {
+            cout << "Numarul este palindrom" << endl;
+        }
+    else {
+        cout << "Numarul nu este palindrom" << endl;
+    }
+    }
 #endif //INITIERE_EXERCITII_WHILE_H
