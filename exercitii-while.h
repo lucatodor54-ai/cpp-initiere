@@ -303,4 +303,50 @@ void ex19 () {
         cout << "Numarul nu este palindrom" << endl;
     }
     }
+void ex21 () {
+    int n=5;
+    int contor=1;
+    while ( contor <= n ) {
+        cout << contor << endl;
+        contor++;
+    }
+    }
+void ex22 () {
+    int n=5;
+    int contor=n;
+    while ( contor >= 1 ) {
+        cout << contor << endl;
+        contor--;
+    }
+}
+void ex23 () {
+    int n=5;
+    int suma=0;
+    int i=1;
+    while ( i <= n) {
+        suma += i;
+        i++;
+    }
+    cout << suma << endl;
+}
+void ex24 () {
+    int nota;
+    int numar=0;
+    int suma=0;
+    cout << "Nota: " << endl;
+    cin >> nota;
+    while (nota!=0) {
+        suma+= nota;
+        numar++;
+        cin >> nota;
+    }
+    if ( numar == 0 ) {
+        cout << "Nu s-a introdus nicio nota" << endl;
+    }
+    else {
+        double media = double (suma/numar);
+        cout << "Ai introdus: " << numar << " note" << endl;
+        cout << "Media este: " << media << endl;
+    }
+}
 #endif //INITIERE_EXERCITII_WHILE_H
