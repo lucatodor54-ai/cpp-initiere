@@ -349,4 +349,91 @@ void ex24 () {
         cout << "Media este: " << media << endl;
     }
 }
+void ex25 () {
+    int n;
+    int numar=0;
+    int suma=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n !=0 ) {
+        suma+=n;
+        numar++;
+        cin >> n;
+    }
+    if ( suma == 0 ) {
+        cout << "Nu s-a introdus niciun numar" << endl;
+    }
+    else {
+int sumalor = n + suma;
+        cout << "Suma lor este: " << sumalor << endl;
+        cout << "Au fost introduse: " << numar  << " numere" << endl;
+    }
+}
+void ex26 () {
+    int n;
+    int numerePozitive=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n != 0 ) {
+        if (n > 0) {
+            numerePozitive++;
+        }
+        cin >> n;
+    }
+   cout << "Au fost introduse: " << numerePozitive << " numere pozitive" << endl;
+}
+void ex27 () {
+    int n;
+    int numereNegative=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n != 0) {
+        if ( n < 0) {
+            numereNegative++;
+        }
+        cin >> n;
+    }
+    cout << "Au fost introduse: " << numereNegative << " numere negative" << endl;
+}
+void ex28 () {
+    int n;
+    int suma=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n != 0) {
+        if ( n > 0) {
+            suma = suma + n;
+        }
+        cin >> n;
+    }
+    cout << "Suma este: " << suma << endl;
+}
+void ex29 () {
+    int n;
+    int maxim;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    maxim = n;
+    while ( n != 0) {
+        if ( n > maxim) {
+            maxim = n;
+        }
+        cin >> n;
+    }
+        cout << "Numarul maxim este: " << maxim << endl;
+}
+void ex30 () {
+    int n;
+    int minim;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    minim = n;
+    while ( n != 0) {
+        if ( n < minim) {
+            minim = n;
+        }
+        cin >> n;
+    }
+    cout << "Numarul minim este: " << minim << endl;
+}
 #endif //INITIERE_EXERCITII_WHILE_H
