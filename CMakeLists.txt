@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(initiere main.cpp
         operatii-conditionale.h
-        exercitii-while.h)
+        exercitii-while.h
+        functii.h
+        functii.h)

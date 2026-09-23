@@ -436,4 +436,33 @@ void ex30 () {
     }
     cout << "Numarul minim este: " << minim << endl;
 }
+void ex31 () {
+    int n;
+    int rezultat=0; // aici construim numarul
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    int p=1; // pozitia cifrei
+    while ( n != 0) {
+        int cifra = n % 10; // luam ultima cifra
+        if ( cifra % 2 == 0) { // verificam daca e para
+            rezultat = cifra * p + rezultat;
+            p*=10; // urmatoarea cifra va fi pe pozitia urmatoare
+        }
+        n/=10; // stergem ultima cifra
+    }
+    if ( rezultat == 0 ) {
+        cout << "Nu sunt cifre pare" << endl;
+    }
+    else {
+        cout << "Numarul par este: " << rezultat << endl;
+    }
+}
+void ex32 () {
+    int n;
+    int rezultat=0;
+    cout << "Introduceti un numar: " << endl;
+    cin >> n;
+    while ( n != 0) {
+    }
+}
 #endif //INITIERE_EXERCITII_WHILE_H

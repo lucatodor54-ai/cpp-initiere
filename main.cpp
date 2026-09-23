@@ -1,8 +1,9 @@
 #include <iostream>
 
-#include "exercitii-while.h"
-
+#include "functii.h"
+//f(2)=7
 int main() {
-   ex30();
+
+   solutie1();
     return 0;
 }
