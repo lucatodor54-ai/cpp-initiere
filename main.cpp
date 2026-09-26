@@ -12,7 +12,7 @@ int  main () {
 
 
 
-    cout << primasiultimaCifra (1233421);
+    cout << ProdusulCifrelor (124);
 
 
        return 0;

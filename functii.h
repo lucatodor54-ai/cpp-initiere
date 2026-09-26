@@ -20,7 +20,7 @@ using namespace std;
       //algorimul de contor
       int contor = 0;
       while ( numar !=0 ) {
-          int cifr=numar%10;
+          int cifra=numar%10;
           contor++;
           numar=numar/10;
       }
@@ -157,6 +157,26 @@ int primasiultimaCifra(int numar) {
       int prima= primaCifra(numar);
       int uc=numar%10;
       return prima*10+uc;
+  }
+int sumaCifrelorPare(int numar) {
+      int suma = 0;
+      while (numar > 0) {
+          int cifra = numar % 10;
+          if (cifra % 2 == 0) {
+              suma = suma + cifra;
+          }
+          numar = numar / 10;
+      }
+      return suma;
+  }
+int ProdusulCifrelor(int numar) {
+      int produsul = 1;
+      while ( numar > 0 ) {
+          int cifra = numar % 10;
+          produsul = produsul*cifra;
+          numar = numar/10;
+      }
+      return produsul;
   }
 
 
