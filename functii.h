@@ -178,6 +178,18 @@ int ProdusulCifrelor(int numar) {
       }
       return produsul;
   }
+int ProdusulCifrelorPare(int numar) {
+      int produsul = 1;
+      while ( numar > 0 ) {
+          int cifra = numar % 10;
+          if (cifra % 2 == 0) {
+              produsul = produsul*cifra;
+          }
+          numar = numar/10;
+      }
+      return produsul;
+  }
+
 
 
 #endif //INITIERE_FUNCTII_H

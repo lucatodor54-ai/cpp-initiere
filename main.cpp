@@ -12,7 +12,7 @@ int  main () {
 
 
 
-    cout << ProdusulCifrelor (124);
+    cout << ProdusulCifrelorPare (3468);
 
 
        return 0;
