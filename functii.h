@@ -189,7 +189,166 @@ int ProdusulCifrelorPare(int numar) {
       }
       return produsul;
   }
+// pt 3468
+// numar > 0          cifra    c==cifra  contorCfire     numar = numar / 10
+// da                  8          nu
+//functoe ce returneaza numarul de apraitii unei cifre in numar
+int contorAparitiiCifra(int numar,int cifraCautata) {
+      int contorCifre = 0;
+      while ( numar > 0 ) {
+          int cifra = numar % 10;
+          if ( cifraCautata == cifra) {
+              contorCifre++;
+          }
+          numar = numar / 10;
+      }
+      return contorCifre;
+  }
+
+bool isDistincte(int numar) {
+      while ( numar !=0 ) {
+          int cifra = numar % 10;
+          if (contorAparitiiCifra(numar,cifra)>1 ) {
+              return false;
+          }
+          numar = numar / 10;
+      }
+      return true;
+  }
+//todo: 123 456  123*1000  123000+456 =123456
+//todo: 3456  12 3456*100+12   345600+12 345612
+
+//functie ce ne returneaza nuamrul de cifre al unui numar
+int numarulDeCifre(int numar) {
+      int contorcifre=0;
+      while ( numar > 0 ) {
+        contorcifre++;
+          numar = numar / 10;
+      }
+      return contorcifre;
+  }
+
+int alipireNumire(int numar1,int numar2) {
+      return numar1 * pow(10, numarulDeCifre(numar2)) + numar2;
+  }
+//3210
+//8459  ct=0;
+//numar > 0        cifre    ct%2!=0     suma           numar             ct
+//  da             9          nu          -              845             1
+//  da             5           da         5              84              2
+//  da             4           da         5               8              3
+//  da             8            da        13              0              4
+// nu
+
+int sumaCifrelorDePePozitiiImpare(int numar) {
+      int suma=0;
+      int ct=0;
+      while ( numar > 0 ) {
+          int cifra = numar % 10;
+          if (ct % 2 != 0) {
+              suma = suma + cifra;
+          }
+
+          numar = numar / 10;
+          ct++;
+      }
+      return suma;
+  }
 
 
+int sumaCifrelorPePozitiiPare(int numar) {
+      int suma=0;
+      int ct=0;
+      while ( numar > 0 ) {
+          int cifra = numar % 10;
+          if (cifra % 2 == 0) {
+              suma = suma + cifra;
+          }
+          numar = numar / 10;
+          ct++;
+      }
+      return suma;
+  }
+
+
+//functie ce returneaza prima cifra a unui numar
+
+int primaCifraa(int numar) {
+      if ( numar < 0) {
+          numar = -numar;
+      }
+      while ( numar >= 10) {
+          numar = numar / 10;
+      }
+      return numar;
+  }
+
+int ultimaCifraa(int numar) {
+      if (numar < 0) {
+          numar = -numar;
+      }
+  return numar%10;
+  }
+int primaSiUltima(int numar) {
+     return  alipireNumire(primaCifra(numar),ultimaCifraa(numar));;
+  }
+
+
+//pt 1134
+// c=0
+
+int cifreDiferite(int numar) {
+      if ( numar == 0) {
+          return 1;
+      }
+      if ( numar < 0) { numar = -numar; }
+      int contor = 0;
+      int c=0;
+
+      while ( c<=9 ) {
+          if ( contorAparitiiCifra(numar,c)==1) {
+              contor++;
+          }
+          c++;
+      }
+      return contor;
+  }
+
+// 235678   31  4
+int radacinaDigitala(int numar) {
+
+      int s=sumaCifrelor(numar);
+
+      while ( s >10 ) {
+          s=sumaCifrelor(s);
+      }
+
+      return s;
+  }
+
+//todo:
+//pt 1134
+// numar > 0          cifra          nou        p         numar
+// da                   4             4         10           113
+// da                   3             34        100          11
+// da                   1            134        1000         1
+// da                   1              1134       10000       0
+//nu
+
+
+int eliminareCifrePare(int numar) {
+
+      int nou=0;
+      int p=1;
+      while ( numar > 0 ) {
+          int cifra=numar % 10;
+          if (cifra%2!=0) {
+              nou=cifra*p+nou;
+              p=p*10;
+          }
+          numar = numar / 10;
+      }
+      return nou;
+  }
 
 #endif //INITIERE_FUNCTII_H

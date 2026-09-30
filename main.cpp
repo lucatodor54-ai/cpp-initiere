@@ -12,8 +12,7 @@ int  main () {
 
 
 
-    cout << ProdusulCifrelorPare (3468);
 
 
-       return 0;
+    cout<<eliminareCifrePare(12134);
     }
