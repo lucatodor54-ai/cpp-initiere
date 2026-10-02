@@ -14,5 +14,5 @@ int  main () {
 
 
 
-    cout<<eliminareCifrePare(12134);
+    cout<<ultimaCifra(12);
     }

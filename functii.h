@@ -350,5 +350,11 @@ int eliminareCifrePare(int numar) {
       }
       return nou;
   }
+int ultimaCifra(int numar) {
+      while ( numar != 0) {
+          int uc = numar % 10;
+          return uc;
+      }
+  }
 
 #endif //INITIERE_FUNCTII_H

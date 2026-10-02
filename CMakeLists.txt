@@ -7,4 +7,5 @@ add_executable(initiere main.cpp
         operatii-conditionale.h
         exercitii-while.h
         functii.h
-        functii.h)
+        functii.h
+        recapitulare-functii.h)
